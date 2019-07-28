@@ -1,0 +1,53 @@
+#advertising {
+  padding-top: 10px;
+}
+
+#containertop {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#banlist {
+  text-align: center;
+  background-color: lightblue;
+  height: 350px;
+  overflow: auto;
+  width: 475px;
+}
+
+#containerbottom {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#footer_bg_faucet_name {
+  background-color: #0d0022;
+}
+
+#footer_hr {
+  margin-top: -11px;
+}
+
+#footer_bg {
+  background: #0d0022 url('#');
+}
+
+#navcol-1 {
+  background: rgba(0,0,0,0.7);
+}
+
+#bg-head {
+  max-width: 750px;
+  padding: 2em;
+  box-shadow: 0px 0px 10px 0px #1d8cf8;
+  border-radius: 40px;
+}
+
+#top-padding-space {
+  padding-top: 80px;
+}
+
+#nav-box-shadow {
+  box-shadow: #e14eca 0px 0px 11px 11px;
+}
+
