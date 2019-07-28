@@ -1,4 +1,4 @@
-rename / or reamove index.tpl
+rename / or remove index.tpl
 rename new-index.tpl to index.tpl
 Done
 Enjoy! 
