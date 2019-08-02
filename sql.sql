@@ -43,7 +43,10 @@ INSERT INTO `faucet_settings` (`id`, `name`, `value`) VALUES
 (15, 'referral_percent', '0'),
 (16, 'reverse_proxy', 'no'),
 (17, 'admin_login', ''),
-(18, 'auto_withdraw', 'no');
+(18, 'auto_withdraw', 'no'),
+(19, 'usr_exp_gain', 'no'),
+(20, 'usr_booster', 'no');
+
 
 CREATE TABLE IF NOT EXISTS `faucet_transactions` (
   `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
@@ -56,13 +59,19 @@ CREATE TABLE IF NOT EXISTS `faucet_transactions` (
 
 CREATE TABLE IF NOT EXISTS `faucet_user_list` (
   `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
-  `address` varchar(75) NOT NULL,
+  `faucethub_username` varchar(50) NOT NULL,
+  `password` varchar(64) NOT NULL,
+  `salt` varchar(32) NOT NULL,
   `ip_address` varchar(50) NOT NULL,
   `balance` decimal(10,8) NOT NULL,
-  `joined` int(32) NOT NULL,
+  `joined` datetime NOT NULL,
+  `group` int(11) NOT NULL,
   `last_activity` int(32) NOT NULL,
   `referred_by` int(32) NOT NULL,
   `last_claim` int(32) NOT NULL,
   `claim_cryptokey` varchar(75) NOT NULL,
+  `is_online` varchar(75) NOT NULL,
+  `is_offline` varchar(75) NOT NULL,
+  `u_exp` int(32) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
