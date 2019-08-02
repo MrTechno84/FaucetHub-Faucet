@@ -72,6 +72,6 @@ CREATE TABLE IF NOT EXISTS `faucet_user_list` (
   `claim_cryptokey` varchar(75) NOT NULL,
   `is_online` varchar(75) NOT NULL,
   `is_offline` varchar(75) NOT NULL,
-  `u_exp` int(32) NOT NULL,
+  `u_exp` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
