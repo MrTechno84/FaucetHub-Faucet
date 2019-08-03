@@ -68,6 +68,7 @@ CREATE TABLE IF NOT EXISTS `faucet_transactions` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 /* */
+
 CREATE TABLE IF NOT EXISTS `faucet_user_list` (
   `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
   `faucethub_username` varchar(50) NOT NULL,
