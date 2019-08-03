@@ -46,7 +46,7 @@ INSERT INTO `faucet_settings` (`id`, `name`, `value`) VALUES
 (18, 'auto_withdraw', 'no'),
 (19, 'faucet_coupons', 'no');
 
-/* TESTING */
+/* TESTING NEW TABLE */
 CREATE TABLE IF NOT EXISTS `faucet_coupons` (
   `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
   `coupon_code` VARCHAR(20) NOT NULL,
@@ -55,11 +55,11 @@ CREATE TABLE IF NOT EXISTS `faucet_coupons` (
   `coupon_count` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-/* */
 
 INSERT INTO `faucet_coupons` (`id`, `coupon_value`, `coupon_expiration`, `coupon_count`) VALUES
 (1, 'coupon_code_1', '100', '15-July-2019', '10'),
 (2, 'coupon_code_2', '50', '25-July-2019', '20');
+/* SOME EXAMPLE COUPONS */
 
 CREATE TABLE IF NOT EXISTS `faucet_transactions` (
   `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
