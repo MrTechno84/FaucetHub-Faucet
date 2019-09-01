@@ -50,6 +50,7 @@ INSERT INTO `faucet_settings` (`id`, `name`, `value`) VALUES
 CREATE TABLE IF NOT EXISTS `faucet_coupons` (
   `id` int(32) unsigned NOT NULL AUTO_INCREMENT,
   `coupon_code` VARCHAR(20) NOT NULL,
+  `coupon_name` VARCHAR(50) NOT NULL,
   `coupon_value` decimal(10,8) NOT NULL,
   `coupon_expiration` datetime NOT NULL,
   `coupon_count` int(11) NOT NULL,
