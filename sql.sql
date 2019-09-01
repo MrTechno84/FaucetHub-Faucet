@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `faucet_coupons` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
-INSERT INTO `faucet_coupons` (`id`, `coupon_value`, `coupon_expiration`, `coupon_count`) VALUES
+INSERT INTO `faucet_coupons` (`id`, `coupon_name`, `coupon_value`, `coupon_expiration`, `coupon_count`) VALUES
 (1, 'coupon_code_1', '100', '15-July-2019', '10'),
 (2, 'coupon_code_2', '50', '25-July-2019', '20');
 /* SOME EXAMPLE COUPONS */
